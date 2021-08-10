@@ -11,7 +11,6 @@ def login_func(email, password, id_card):
         json_login = json.loads(str(response.content))
         token = json_login['access_token']
         user_id = json.loads(str(json_login['user']))['Id']
-        print (user_id)
         submit_data = {
             "IdProductOption": 21628,
             "IdRaffle": 76,
